@@ -1,0 +1,1 @@
+# Interfaces gráficas de usuario (PySide6)

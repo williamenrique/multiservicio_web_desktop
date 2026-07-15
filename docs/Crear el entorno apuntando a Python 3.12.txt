@@ -1,0 +1,28 @@
+# 1. Borra el entorno virtual que falló
+rmdir /s /q venv
+
+# 2. Crea el entorno forzando el uso de Python 3.12
+py -3.12 -m venv venv
+
+# 3. Actívalo
+.\venv\Scripts\activate
+
+
+
+
+#crea entorno 
+python -m venv venv
+
+#activar entorno 
+venv\Scripts\activate
+
+#instalar dependencias 
+pip install -r requirements.txt
+
+#variables de entornoDB_HOST=tu_servidor_web_o_ip
+DB_USER=tu_usuario_de_base_de_datos
+DB_PASSWORD=tu_contraseña_de_base_de_datos
+DB_NAME=multiservicio_2.0
+
+#ejecutar
+python main.py

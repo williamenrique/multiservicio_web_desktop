@@ -1,0 +1,1 @@
+# Controladores: orquestan la lógica entre vistas y modelos
