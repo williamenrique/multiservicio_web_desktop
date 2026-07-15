@@ -1,22 +1,5 @@
-1. El "Plugin" y Librerías para una Interfaz Moderna
-Para este proyecto usaremos tres pilares visuales:
 
-CustomTkinter: Una envoltura moderna sobre Tkinter que añade soporte nativo para Modo Oscuro/Claro automático, esquemas de color personalizables y widgets con bordes redondeados y sombras suaves muy similares a interfaces web actuales (Tailwind/Material Design).
-
-CTkMessagebox: Extensión oficial para CustomTkinter que genera ventanas emergentes de alerta y confirmación modernas.
-
-Pillow (PIL): Librería de procesamiento de imágenes necesaria para renderizar los logotipos del taller e íconos en alta resolución dentro de la interfaz gráfica.
-
-2. Archivo de Dependencias (requirements.txt)
-En la raíz de tu proyecto, crea un archivo llamado requirements.txt con las librerías necesarias y sus versiones estables. Además de la interfaz gráfica, incluiremos python-dotenv para proteger las credenciales y bcrypt para encriptar las contraseñas del personal del taller de forma segura:
-
-Plaintext
-customtkinter==5.2.2
-CTkMessagebox==2.5
-Pillow==10.3.0
-python-dotenv==1.0.1
-bcrypt==4.1.2
-3. Guía de Inicialización del Proyecto (Paso a Paso)
+1. Guía de Inicialización del Proyecto (Paso a Paso)
 Sigue estos comandos en tu terminal dentro de la carpeta raíz de tu proyecto para dejar el entorno configurado y listo para programar:
 
 Paso 1: Crear el entorno virtual (Venv)
@@ -35,6 +18,7 @@ Bash
 source venv/bin/activate
 Paso 3: Actualizar el gestor de paquetes e instalar dependencias
 Bash
+
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 4. Inicialización del Código Base Moderno
