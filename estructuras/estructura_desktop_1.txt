@@ -1,0 +1,55 @@
+multiserviciopro/
+│
+├── config/                          # Configuraciones globales
+│   ├── __init__.py
+│   └── database.py                  # Pool de conexiones a MySQL (reemplaza Singleton)
+│
+├── models/                          # Lógica de Datos y Consultas SQL (Modelos)
+│   ├── __init__.py
+│   ├── base_model.py                # Métodos comunes CRUD para todos los modelos
+│   ├── usuario_model.py             # Login, gestión de usuarios
+│   ├── cliente_model.py             # CRUD clientes
+│   ├── inventario_model.py          # CRUD inventario + kardex
+│   └── factura_model.py             # Facturación, detalle, abonos
+│
+├── views/                           # Interfaces Gráficas (UI en PySide6)
+│   ├── __init__.py
+│   ├── main_window.py               # Dashboard principal con navegación
+│   ├── login_view.py                # Ventana de Login
+│   ├── components/                  # Widgets reutilizables
+│   │   ├── __init__.py
+│   │   ├── data_table.py            # Tabla genérica con filtros y paginación
+│   │   └── notification.py          # Toast / notificaciones emergentes
+│   └── modules/                     # Vistas específicas de cada módulo
+│       ├── __init__.py
+│       ├── inventario_view.py
+│       ├── clientes_view.py
+│       └── facturacion_view.py
+│
+├── controllers/                     # Orquestan la lógica (unen Views con Models)
+│   ├── __init__.py
+│   ├── login_controller.py
+│   ├── inventario_controller.py
+│   ├── clientes_controller.py
+│   └── facturacion_controller.py
+│
+├── assets/                          # Recursos estáticos
+│   ├── icons/                       # Iconos SVG/PNG
+│   └── img/                         # logos, fotos por defecto
+│
+├── utils/                           # Herramientas transversales
+│   ├── __init__.py
+│   ├── validators.py                # Validación de cédulas, emails, NIT
+│   ├── helpers.py                   # Formateo de moneda, fechas, etc.
+│   ├── connection_pool.py           # Pool de conexiones MySQL (evita timeouts)
+│   ├── lock_manager.py              # Control de concurrencia (optimistic locking)
+│   └── cache.py                     # Caché local de datos maestros (SQLite)
+│
+├── docs/                            # Documentación y scripts de instalación
+│   ├── Crear el entorno apuntando a Python 3.12.txt
+│   ├── entorno.sh
+│   └── instala los paquetes sin restricciones.sh
+│
+├── .env                             # Variables de entorno (DB_HOST, DB_USER, etc.)
+├── requirements.txt                 # Dependencias del proyecto
+└── main.py                          # Punto de entrada de la aplicación
