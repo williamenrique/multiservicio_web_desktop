@@ -19,6 +19,8 @@ venv\Scripts\activate
 #instalar dependencias 
 pip install -r requirements.txt
 
+
+
 #variables de entornoDB_HOST=tu_servidor_web_o_ip
 DB_USER=tu_usuario_de_base_de_datos
 DB_PASSWORD=tu_contraseña_de_base_de_datos
