@@ -1,1 +1,8 @@
 public/uploads/
+.flet/
+app/
+database/
+entorno/
+src/
+config/
+
