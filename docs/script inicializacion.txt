@@ -1,0 +1,28 @@
+#crear entorno virtual
+python -m venv entorno
+
+#activarlo
+entorno\Scripts\activate
+
+#instalar flet
+pip install flet[all]
+pip show flet
+
+python.exe -m pip install --upgrade pip
+
+#correr en web 
+flet run --web main.py
+ 
+#correr en desktop
+flet run main.py
+
+#correr en web
+flet run --web main.py
+#en main.py colocarlo asi ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+
+
+#correr en android
+#crear carpeta 
+flet create appmovil
+cd appmovil
+flet run --andorid

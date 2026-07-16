@@ -1,0 +1,98 @@
+============================================================
+   TALLER MULTISERVICIO PRO - INSTRUCCIONES DE INSTALACION
+============================================================
+
+Siga estos pasos EN ORDEN para instalar todas las dependencias
+necesarias para ejecutar la aplicacion.
+
+Asegurese de estar en el directorio del proyecto:
+    cd C:\xampp\htdocs\multiservicio_web_desktop
+
+Y de tener activado el entorno virtual (opcional pero recomendado):
+    entorno\Scripts\activate
+
+============================================================
+   METODO RAPIDO (recomendado)
+============================================================
+Instalar todo de una sola vez usando el archivo requirements.txt:
+
+    pip install -r requirements.txt
+
+Luego verifique e inicie la app (Pasos 6 y 7).
+
+============================================================
+   METODO PASO A PASO
+============================================================
+
+PASO 1: Actualizar pip
+------------------------------------------------------------
+Comando:
+    python -m pip install --upgrade pip
+
+Descripcion: Actualiza el gestor de paquetes de Python a la
+ultima version disponible.
+
+============================================================
+
+PASO 2: Instalar flet (Framework de interfaz grafica)
+------------------------------------------------------------
+Comando:
+    pip install "flet>=0.86.0"
+
+Descripcion: Framework UI para crear aplicaciones de escritorio
+y web con Python. Es la base de toda la interfaz grafica del
+sistema (ventanas, botones, formularios, tablas, etc.).
+
+============================================================
+
+PASO 3: Instalar pymysql (Conector MySQL)
+------------------------------------------------------------
+Comando:
+    pip install "pymysql>=1.1.0"
+
+Descripcion: Conector nativo de Python para bases de datos
+MySQL/MariaDB. Permite la conexion y consultas a la base de
+datos del taller.
+
+============================================================
+
+PASO 4: Instalar bcrypt (Hash de contrasenas)
+------------------------------------------------------------
+Comando:
+    pip install "bcrypt>=4.0"
+
+Descripcion: Libreria para hashing seguro de contrasenas.
+Se utiliza para cifrar y verificar las contrasenas de los
+usuarios del sistema.
+
+============================================================
+
+PASO 5: Instalar python-dotenv (Variables de entorno)
+------------------------------------------------------------
+Comando:
+    pip install "python-dotenv>=1.0"
+
+Descripcion: Permite cargar configuracion desde archivos .env.
+Se usa para gestionar las credenciales de la base de datos
+(host, usuario, contrasena, etc.) de forma segura.
+
+============================================================
+
+PASO 6: Verificar instalacion
+------------------------------------------------------------
+Comando:
+    python -c "import flet; import pymysql; import bcrypt; import dotenv; print('Todas las dependencias instaladas correctamente.')"
+
+Descripcion: Verifica que todos los modulos necesarios esten
+disponibles para su uso.
+
+============================================================
+
+PASO 7: Ejecutar la aplicacion
+------------------------------------------------------------
+Comando:
+    python main.py
+
+Descripcion: Inicia la aplicacion Taller Multiservicio PRO.
+
+============================================================
